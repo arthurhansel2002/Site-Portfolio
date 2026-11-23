@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arthur Hansel | Portfólio</title>
+  <meta name="description" content="Portfólio de Arthur Hansel, estudante de Análise e Desenvolvimento de Sistemas na UDF.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">AH<span>.</span></a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <button id="tema" class="btn-tema" type="button" aria-label="Alternar entre modo claro e escuro">
+        <span class="icone-lua">🌙</span><span class="icone-sol">☀️</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>Oi, eu sou o <em>Arthur</em>.</h1>
+        <p>Estudante do 1º semestre de Análise e Desenvolvimento de Sistemas, aprendendo a transformar ideias em páginas que funcionam.</p>
+        <div class="botoes">
+          <a class="btn btn-cheio" href="#projetos">Ver meus projetos</a>
+          <a class="btn btn-vazio" href="#contato">Falar comigo</a>
+        </div>
+      </div>
+      <div class="codigo" aria-hidden="true">
+        <p><b>const</b> arthur = {</p>
+        <p>&nbsp;&nbsp;curso: <i>"ADS"</i>,</p>
+        <p>&nbsp;&nbsp;faculdade: <i>"UDF"</i>,</p>
+        <p>&nbsp;&nbsp;semestre: <i>1</i>,</p>
+        <p>&nbsp;&nbsp;origem: <i>"Belo Horizonte"</i>,</p>
+        <p>&nbsp;&nbsp;aprendendo: <i>true</i></p>
+        <p>};</p>
+      </div>
+    </section>
+
+    <section id="sobre" class="secao sobre">
+      <img class="foto" src="images/foto.jpg" alt="Foto de Arthur Hansel" width="220" height="220">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>Me chamo Arthur Hansel, tenho 24 anos e nasci em Belo Horizonte. Curso Análise e Desenvolvimento de Sistemas na UDF e estou no primeiro semestre, onde comecei a escrever meu código em HTML, CSS e JavaScript.</p>
+        <p>Este portfólio é a avaliação final de Front End e reúne o que construí até aqui.</p>
+        <ul class="fatos">
+          <li><strong>24</strong> anos</li>
+          <li><strong>BH</strong> cidade natal</li>
+          <li><strong>UDF</strong> faculdade</li>
+          <li><strong>1º</strong> semestre</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao">
+      <h2>Projetos do 1º semestre</h2>
+      <p class="intro">Clique em um card para abrir o projeto.</p>
+      <div class="grade">
+        <!-- Para adicionar um projeto, copie um bloco <article> inteiro -->
+        <article class="card">
+          <a href="projetos/central-amazonia/index.html" target="_blank" rel="noopener">
+            <img src="images/projeto-amazonia.jpg" alt="Prévia do site Central Amazônia" loading="lazy">
+            <div class="card-corpo">
+              <h3>Central Amazônia</h3>
+              <p>Site sobre a Floresta Amazônica com galeria de imagens, mapa incorporado, curiosidades e formulário de contato.</p>
+              <span class="tags"><span>HTML</span><span>CSS</span></span>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="projetos/dia-da-musica/index.html" target="_blank" rel="noopener">
+            <img src="images/projeto-musica.jpg" alt="Prévia do site Dia Internacional da Música" loading="lazy">
+            <div class="card-corpo">
+              <h3>Dia Internacional da Música</h3>
+              <p>Página sobre gêneros, história e popularidade da música, feita com componentes do Bootstrap.</p>
+              <span class="tags"><span>HTML</span><span>Bootstrap</span><span>Font Awesome</span></span>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="https://github.com/arthurhansel2002/sistema-banco-dados-formula-1" target="_blank" rel="noopener">
+            <img src="images/projeto-formula1.svg" alt="Prévia do banco de dados Fórmula 1" loading="lazy">
+            <div class="card-corpo">
+              <h3>Banco de Dados Fórmula 1</h3>
+              <p>Banco relacional em MySQL com 5 tabelas, relacionamentos, inserts e consultas com JOIN, GROUP BY e funções.</p>
+              <span class="tags"><span>MySQL</span><span>SQL</span></span>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="projetos/loja-de-roupas/modelagem-loja-de-roupas.pdf" target="_blank" rel="noopener">
+            <img src="images/projeto-loja.jpg" alt="Prévia do modelo lógico da loja de roupas" loading="lazy">
+            <div class="card-corpo">
+              <h3>Modelagem: Loja de Roupas</h3>
+              <p>Trabalho em grupo com modelo conceitual, lógico e físico em MySQL, incluindo triggers, funções e procedures.</p>
+              <span class="tags"><span>MySQL</span><span>Modelagem</span><span>Triggers</span></span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="secao">
+      <h2>Contato</h2>
+      <p class="intro">Vamos conversar? Escolha o canal que preferir.</p>
+      <ul class="contatos">
+        <li><a href="https://www.linkedin.com/in/arthur-hansel-fernandes-santos-8b4931430/" target="_blank" rel="noopener"><span>LinkedIn</span>Arthur Hansel Fernandes Santos</a></li>
+        <li><a href="https://github.com/arthurhansel2002" target="_blank" rel="noopener"><span>GitHub</span>github.com/arthurhansel2002</a></li>
+        <li><a href="mailto:arthurhansel2002@gmail.com"><span>E-mail</span>arthurhansel2002@gmail.com</a></li>
+        <li><a href="https://wa.me/5561999361036" target="_blank" rel="noopener"><span>Telefone</span>(61) 99936-1036</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Arthur Hansel · Feito com HTML, CSS e JavaScript</p>
+  </footer>
+</body>
+</html>
